@@ -20,4 +20,9 @@ export class TodoComponent implements OnInit, OnDestroy {
     this.todoService.getTodos().subscribe((todos) => (this.todos = todos));
     console.log('on init');
   }
+
+  changeCompleted(id: number): void {
+    const index = this.todos.findIndex((todo) => todo.id === id);
+    this.todos[index].completed = !this.todos[index].completed;
+  }
 }

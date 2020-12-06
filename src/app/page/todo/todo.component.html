@@ -1,2 +1,11 @@
 <p>todo works!</p>
-{{ todos | json }}
+<mat-list role="list">
+  <mat-list-item
+    (click)="changeCompleted(todo.id)"
+    [ngStyle]="{ color: todo.completed ? 'green' : 'red' }"
+    *ngFor="let todo of todos"
+    role="listitem"
+  >
+    {{ todo.id }} - {{ todo.title }}
+  </mat-list-item>
+</mat-list>

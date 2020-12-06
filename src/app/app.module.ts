@@ -9,6 +9,7 @@ import { PostComponent } from './page/post/post.component';
 import { TodoComponent } from './page/todo/todo.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [AppComponent, HeaderComponent, TodoComponent, PostComponent],
   imports: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     HttpClientModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
