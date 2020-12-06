@@ -15,4 +15,7 @@ export class TodoService {
     return this.http.get<Todo[]>(`${this.endPointUrl}/todos`);
     // return this.http.get(this.endPointUrl + '/todos');
   }
+  updateTodo(todo: Todo): Observable<any> {
+    return this.http.put(`${this.endPointUrl}/todos/${todo.id}`, todo);
+  }
 }

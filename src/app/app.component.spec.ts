@@ -10,19 +10,28 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  function add(a: number, b: number) {
+    return a + b;
+  }
+
+  fit('test', () => {
+    const number = add(1, 1);
+    expect(number).toBe(2);
+  });
+
+  fit('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'initsoft_angular_day_2'`, () => {
+  fit(`should have as title 'initsoft_angular_day_2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('initsoft_angular_day_2');
   });
 
-  it('should render title', () => {
+  fit('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;

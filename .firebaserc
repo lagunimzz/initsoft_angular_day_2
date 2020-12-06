@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "initsoft-angular": {
+      "hosting": {
+        "initsoft_angular_day_2": [
+          "initsoft-angular"
+        ]
+      }
+    }
+  }
+}
