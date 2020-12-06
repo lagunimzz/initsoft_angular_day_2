@@ -1,3 +1,7 @@
 <app-header></app-header>
+<input placeholder="email" [(ngModel)]="email" />
+<input type="password" placeholder="password" [(ngModel)]="password" />
+<button (click)="login()">Sign In</button><br />
+<button (click)="loggingGoogle()">Sign In Google</button>
 <router-outlet></router-outlet>
 <span class="content">FOOTER initsoft_angular_day_2 app is running!</span>

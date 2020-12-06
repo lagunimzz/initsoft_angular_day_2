@@ -14,6 +14,9 @@ import { MatListModule } from '@angular/material/list';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { MatInputModule } from '@angular/material/input';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [AppComponent, HeaderComponent, TodoComponent, PostComponent],
   imports: [
@@ -25,7 +28,9 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

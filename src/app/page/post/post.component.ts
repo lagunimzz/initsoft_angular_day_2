@@ -15,7 +15,7 @@ export class PostComponent implements OnInit {
 
   addPost(event: any): void {
     if (event.key === 'Enter') {
-      this.post.push(event.target.value);
+      this.post.push({ key: 1, value: event.target.value });
       event.target.value = '';
     }
   }
