@@ -1,1 +1,5 @@
 <p>post works!</p>
+<mat-form-field>
+  <input (keyup)="addPost($event)" matInput placeholder="Input Post" />
+</mat-form-field>
+{{ posts | json }}
